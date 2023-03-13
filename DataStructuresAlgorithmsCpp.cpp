@@ -13,6 +13,22 @@ int main()
 	array.insert(3);
 	array.insert(4);
 	array.insert(5);
+	array.insert(7);
+	array.insert(9);
+	array.insert(8);
+	array.print();
+	cout << "index of:" << array.indexOf(6) << endl;
+	array.removeAt(3);
+	cout << "max of:" << array.max() << endl;
+	
+	array.insertAt(6, 2);
+	array.print();
+
+	int arrToIntersect[] = { 1, 3, 4, 5 };
+	int size = sizeof(arrToIntersect) / sizeof(int);
+	array.intersect(arrToIntersect, size);
+
+	array.reverse();
 	array.print();
 }
 
